@@ -55,7 +55,7 @@ def create_sword() -> None:
     """Генерация найденного меча."""
     global attack
     sword = randint(10, 25)
-    print("MEЧ Вы нашли силой {s}, нажмите 1 подобрать 2 оставить".format(s=str(sword)))
+    print("MEЧ Вы нашли силой {s}, нажмите 1 подобрать 2 оставить.".format(s=str(sword)))
     choice = choice_player()
     if choice == "1":
         attack = sword
@@ -73,7 +73,7 @@ def create_apple() -> None:
     global hp
     apple = randint(1, 5)
     hp += apple
-    print("Вы съели яблоко hp восстановлено на {n}".format(n=str(apple)))
+    print("Вы съели яблоко hp восстановлено на {n}.".format(n=str(apple)))
     in_game_action()
 
 
